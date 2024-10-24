@@ -209,6 +209,10 @@ export function updateStatus(msg: string) {
   logseq.UI.showMsg(msg);
 }
 
+export function split_string(inputString: string): string[] {
+  return inputString.split(",");
+}
+
 export function renderTemplate(
   template: string,
   serverUrl: string,
@@ -235,7 +239,7 @@ export function renderTemplate(
     result = render(template, {
       audiobookshelfUrl: `${serverUrl}/item/${book.id}`,
       asin: book.media.metadata.asin,
-      authors: book.media.metadata.authors,
+      authors: split_string(book.media.metadata.authorName),
       description: book.media.metadata.description,
       duration: seconds_human_readable(progress.duration),
       currentTime: seconds_human_readable(progress.currentTime),
@@ -248,7 +252,7 @@ export function renderTemplate(
       finishedDate: progress.finishedAt,
       finishedDateParsed: itemFinishedDate,
       language: book.media.metadata.language,
-      narrators: book.media.metadata.narrators,
+      narrators: split_string(book.media.metadata.narratorName),
       progress:
         (progress.progress * 100).toFixed(progress.progress == 1 ? 0 : 2) + "%",
       publishedDate: book.media.metadata.publishedDate,
