@@ -71,13 +71,13 @@ export interface BookMetadata {
   title: string;
   subtitle: string | null;
   asin: string;
-  authors: Authors[];
+  authorName: string;
   description: string;
   explicit: boolean;
   genres: string[];
   isbn: string | null;
   language: string | null;
-  narrators: string[];
+  narratorName: string;
   publishedDate: string | null;
   publishedYear: string;
   publisher: string;
@@ -146,11 +146,6 @@ export interface PodcastEpisode {
   publishedAt: number;
   addedAt: number;
   updatedAt: number;
-}
-
-export interface Authors {
-  id: string;
-  name: string;
 }
 
 export interface Series {
