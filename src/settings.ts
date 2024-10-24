@@ -160,8 +160,7 @@ duration:: {{{duration}}}
 currentTime:: {{{currentTime}}}
 {{!===== Authors =====}}
 {{#authors.length}}
-authors:: {{#authors}}[[{{{name}}}]]{{/authors}}
-{{/authors.length}}
+authors:: {{#authors}}[[{{{.}}}]]{{/authors}}
 {{!===== Narrators =====}}
 {{#narrators.length}}
 narrators:: {{#narrators}}[[{{{.}}}]]{{/narrators}}
