@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Gandalf-the-Blue/logseq-plugin-audiobookshelf-import/compare/v1.0.0...v1.0.1) (2024-10-24)
+
+
+### Bug Fixes
+
+* Template & unit-test pnpm version ([ae50d51](https://github.com/Gandalf-the-Blue/logseq-plugin-audiobookshelf-import/commit/ae50d518a44f71804008de376998576a34cf8e7d))
+
 # 1.0.0 (2024-10-24)
 
 
