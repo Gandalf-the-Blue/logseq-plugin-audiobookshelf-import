@@ -544,7 +544,7 @@ duration:: {{{duration}}}
 currentTime:: {{{currentTime}}}
 {{!===== Authors =====}}
 {{#authors.length}}
-authors:: {{#authors}}[[{{{name}}}]]{{/authors}}
+authors:: {{#authors}}[[{{{.}}}]]{{/authors}}
 {{/authors.length}}
 {{!===== Narrators =====}}
 {{#narrators.length}}
@@ -554,10 +554,8 @@ narrators:: {{#narrators}}[[{{{.}}}]]{{/narrators}}
 {{#genres.length}}
 genres:: {{#genres}}[[{{{.}}}]]{{/genres}}
 {{/genres.length}}
-{{!===== Series =====}}
-{{#series}}
-series:: {{#series}}[[{{{name}}}]]{{/series}}
-{{/series}}
+seriesName:: {{{seriesName}}}
+seriesOrder::{{{seriesOrder}}}
 source:: [Open in Audiobookshelf]({{{audiobookshelfUrl}}})
 asin:: {{{asin}}}
 isbn:: {{{isbn}}}
@@ -595,10 +593,11 @@ progress:: 42.06%
 isFinished:: false
 duration:: 0h 24m 14s
 currentTime:: 0h 10m 12s
-authors:: [[Mark Twain]]
-narrators:: [[Elijah Wood]]
+authors:: [[Mark Twain]][[XYZ]]
+narrators:: [[Elijah Wood]][[XYZ]]
 genres:: [[Literature & Fiction]]
-series:: [[Twain's Tom and Huck]]
+seriesName:: [[Twain's Tom and Huck]]
+seriesOrder:: [[1]]
 source:: [Open in Audiobookshelf](http://localhost/item/li_q9teoi4jste86wnk76)
 asin:: B0040J17CW
 isbn:: 
