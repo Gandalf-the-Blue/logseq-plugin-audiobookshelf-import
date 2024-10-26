@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/Gandalf-the-Blue/logseq-plugin-audiobookshelf-import/compare/v1.0.3...v1.0.4) (2024-10-26)
+
+
+### Bug Fixes
+
+* Removing seriesOrder ([c33a92a](https://github.com/Gandalf-the-Blue/logseq-plugin-audiobookshelf-import/commit/c33a92a787e06d133dd2b14666cc046a69698669))
+
 ## [1.0.3](https://github.com/Gandalf-the-Blue/logseq-plugin-audiobookshelf-import/compare/v1.0.2...v1.0.3) (2024-10-26)
 
 
