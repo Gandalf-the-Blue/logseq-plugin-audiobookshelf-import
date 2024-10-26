@@ -555,7 +555,6 @@ narrators:: {{#narrators}}[[{{{.}}}]]{{/narrators}}
 genres:: {{#genres}}[[{{{.}}}]]{{/genres}}
 {{/genres.length}}
 seriesName:: {{{seriesName}}}
-seriesOrder::{{{seriesOrder}}}
 source:: [Open in Audiobookshelf]({{{audiobookshelfUrl}}})
 asin:: {{{asin}}}
 isbn:: {{{isbn}}}
