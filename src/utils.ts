@@ -186,6 +186,14 @@ export function abLog(functionName: string, message: string) {
   }
 }
 
+export function sanitize_series(seriesInput: string){
+  const parts = seriesInput.split("#");
+  const seriesName = parts[0].trim();
+  const seriesOrder = parseInt(parts[1].trim());
+  return { seriesName, seriesOrder };
+}
+
+
 export function seconds_human_readable(seconds: number) {
   // day, h, m and s
   var days = Math.floor(seconds / (24 * 60 * 60));
@@ -258,7 +266,8 @@ export function renderTemplate(
       publishedDate: book.media.metadata.publishedDate,
       publishedYear: book.media.metadata.publishedYear,
       publisher: book.media.metadata.publisher,
-      series: book.media.metadata.series,
+      seriesName: sanitize_series(book.media.metadata.seriesName).seriesName,
+      seriesOrder: sanitize_series(book.media.metadata.seriesName).seriesOrder,
       subtitle: book.media.metadata.subtitle,
       tags: book.media.tags,
       title: book.media.metadata.title,

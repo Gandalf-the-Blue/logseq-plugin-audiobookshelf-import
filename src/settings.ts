@@ -78,7 +78,7 @@ duration:: {{{duration}}}
 currentTime:: {{{currentTime}}}
 {{!_______________________________}}
 {{#authors.length}}
-authors:: {{#authors}}[[{{{name}}}]]{{/authors}}
+authors:: {{#authors}}[[{{{.}}}]]{{/authors}}
 {{/authors.length}}
 {{!_______________________________}}
 {{#narrators.length}}
@@ -171,7 +171,8 @@ genres:: {{#genres}}[[{{{.}}}]]{{/genres}}
 {{/genres.length}}
 {{!===== Series =====}}
 {{#series}}
-series:: {{#series}}[[{{{name}}}]]{{/series}}
+seriesName:: {{seriesName}}
+seriesOrder:: {{seriesOrder}}
 {{/series}}
 source:: [Open in Audiobookshelf]({{{audiobookshelfUrl}}})
 asin:: {{{asin}}}
