@@ -169,11 +169,8 @@ narrators:: {{#narrators}}[[{{{.}}}]]{{/narrators}}
 {{#genres.length}}
 genres:: {{#genres}}[[{{{.}}}]]{{/genres}}
 {{/genres.length}}
-{{!===== Series =====}}
-{{#series}}
-seriesName:: {{seriesName}}
-seriesOrder:: {{seriesOrder}}
-{{/series}}
+seriesName:: {{{seriesName}}}
+seriesOrder:: {{{seriesOrder}}}
 source:: [Open in Audiobookshelf]({{{audiobookshelfUrl}}})
 asin:: {{{asin}}}
 isbn:: {{{isbn}}}
