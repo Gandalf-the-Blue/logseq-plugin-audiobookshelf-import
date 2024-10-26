@@ -81,7 +81,7 @@ export interface BookMetadata {
   publishedDate: string | null;
   publishedYear: string;
   publisher: string;
-  seriesName: string;
+  series: string;
 }
 
 export interface PodcastLibraryItem extends LibraryItem {

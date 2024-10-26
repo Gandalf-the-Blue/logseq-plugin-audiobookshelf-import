@@ -11,6 +11,7 @@ import {
   renderTemplate,
   loadPodcasts,
   userMediaProgress,
+  sanitize_series,
 } from "../src/utils";
 
 import audiobookshelfAuthorize from "../tests/__fixtures__/authorize.json";
@@ -51,6 +52,10 @@ describe("seconds_human_readable()", () => {
   it("should calculate no duration", () => {
     let content = seconds_human_readable(0);
     expect(content).toBe("0h 0m 0s");
+  });
+  it("should calculate correct Series", () => {
+    let content = sanitize_series("XYZ #5");
+    expect(content).toBe({"seriesName":"XYZ", "seriesOrder":"5"});
   });
 });
 
