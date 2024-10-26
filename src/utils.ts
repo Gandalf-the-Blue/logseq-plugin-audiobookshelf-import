@@ -189,8 +189,8 @@ export function abLog(functionName: string, message: string) {
 export function sanitize_series(seriesName: string){
   const parts = seriesName.split("#");
   const sanitizedSeriesName = parts[0].trim();
-  const sanitizedSeriesOrder = parseInt(parts[1].trim());
-  return { sanitizedSeriesName, sanitizedSeriesOrder };
+//  const sanitizedSeriesOrder = parseInt(parts[1].trim());
+  return sanitizedSeriesName;
 }
 
 
@@ -266,8 +266,7 @@ export function renderTemplate(
       publishedDate: book.media.metadata.publishedDate,
       publishedYear: book.media.metadata.publishedYear,
       publisher: book.media.metadata.publisher,
-      seriesName: sanitize_series(book.media.metadata.seriesName).sanitizedSeriesName,
-      seriesOrder: sanitize_series(book.media.metadata.seriesName).sanitizedSeriesOrder,
+      seriesName: sanitize_series(book.media.metadata.seriesName),
       subtitle: book.media.metadata.subtitle,
       tags: book.media.tags,
       title: book.media.metadata.title,
