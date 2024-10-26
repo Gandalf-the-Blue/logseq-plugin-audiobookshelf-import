@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/Gandalf-the-Blue/logseq-plugin-audiobookshelf-import/compare/v1.0.4...v1.0.5) (2024-10-26)
+
+
+### Bug Fixes
+
+* Create Series page ([78fb08c](https://github.com/Gandalf-the-Blue/logseq-plugin-audiobookshelf-import/commit/78fb08c69bbf93fef3ba249af84c15c3505872d8))
+
 ## [1.0.4](https://github.com/Gandalf-the-Blue/logseq-plugin-audiobookshelf-import/compare/v1.0.3...v1.0.4) (2024-10-26)
 
 
