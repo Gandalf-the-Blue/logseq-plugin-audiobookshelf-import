@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/Gandalf-the-Blue/logseq-plugin-audiobookshelf-import/compare/v1.0.1...v1.0.2) (2024-10-26)
+
+
+### Bug Fixes
+
+* Series for Books ([620df31](https://github.com/Gandalf-the-Blue/logseq-plugin-audiobookshelf-import/commit/620df31f5b8ee8be31f9e6b3138cfd622555c57a))
+* Templates for Series & Authors ([5b31fd2](https://github.com/Gandalf-the-Blue/logseq-plugin-audiobookshelf-import/commit/5b31fd27913d4f1d934fc38af1b0c3a062e833f0))
+
 ## [1.0.1](https://github.com/Gandalf-the-Blue/logseq-plugin-audiobookshelf-import/compare/v1.0.0...v1.0.1) (2024-10-24)
 
 
